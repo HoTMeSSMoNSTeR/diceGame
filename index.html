@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="overlay invisible" id="overlay">
+        <div id="winner" class="winner"></div>
+        <div class="beware" id="beware">BEWARE, BY ROLLING THE DICE YOU HAVE OPENED THE DARKEST TIMELINE!! PREPARE FOR
+            THE WORST!!
+        </div>
+        <div class="dark-timeline">
+            <img src="https://media.giphy.com/media/zPOErRpLtHWbm/giphy.gif"
+                aria-label="A GIF of the darkest timeline scene from the show Community">
+        </div>
+        <button id="resetBtn">💥 Reset Timeline 💥</button>
+    </div>
+    <div class="container" id="container">
+        <h1 id="message">Player 1 Turn!</h1>
+        <div class="players">
+            <div id="player1">
+                <h1>Score:
+                    <span id="player1Scoreboard">0</span>
+                </h1>
+                <div id="player1Dice" class="dice diceOne active">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div id="player2">
+                <h1>Score:
+                    <span id="player2Scoreboard">0</span>
+                </h1>
+                <div id="player2Dice" class="dice diceTwo not-active">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <button id="rollBtn">⭐️ Roll Dice ⭐️</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
